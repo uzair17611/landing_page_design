@@ -28,7 +28,9 @@
   
   .header h1 {
     font-weight: 700;
-    color: white;
+    background: linear-gradient(to right, #ffcc00, #ff0066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
     position: relative;
     animation-name: fadeInOut;
@@ -65,7 +67,7 @@
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: whitesmoke;
+    color: snow;
     font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
     animation-name: slideIn;
     animation-duration: 1s;
@@ -84,11 +86,11 @@
   
   .hero-content p {
     font-size: 18px;
+    font-weight: 500;
+    color:#ddd;
     margin-bottom: 30px;
     font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-    background: linear-gradient(to right, #ffcc00, #ff0066);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
   }
   
   .cta-button {
@@ -158,6 +160,13 @@
   .why-pentester-section h2 {
     font-size: 24px;
     font-weight: bold;
+    background: linear-gradient(to right, #ffcc00, #ff0066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif
 
   
   }
@@ -173,7 +182,7 @@
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
-    color:#ddd;
+    color:snow;
 
  
   }
@@ -215,7 +224,7 @@
     background-color:transparent;
     border-radius: 20px;
     text-align: center;
-    color:white;
+    color:snow;
     padding: 20px;
     box-shadow:#0aaf62;
     margin:10px  30px;
@@ -231,13 +240,19 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    color:white;
+    background: linear-gradient(to right, #ffcc00, #ff0066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif
   }
   
   .feature p {
     font-size: 18px;
     line-height: 1.5;
-    color: #777;
+    color:snow;
   }
   
   .cta-section {
@@ -249,7 +264,7 @@
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: white;
+    color:snow;;
   }
   
   .cta-buttons {
@@ -266,14 +281,14 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: white;
+    color:snow;;
   }
   
   .about-section p {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
-    color: #777;
+    color:snow;;
   }
   
   .footer {
@@ -282,7 +297,7 @@
     padding-top: 20px;
     border-top: 1px solid #ddd;
     font-size: 16px;
-    color: #777;
+    color:snow;
     background-color:transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
   }
