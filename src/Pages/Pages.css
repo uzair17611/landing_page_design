@@ -28,8 +28,24 @@
   
   .header h1 {
     font-weight: 700;
-    color:white;
+    color: white;
     font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    position: relative;
+    animation-name: fadeInOut;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
   
   .hero-section {
@@ -49,15 +65,30 @@
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
-    color:whitesmoke;
+    color: whitesmoke;
     font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   
   .hero-content p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #777;
     font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    background: linear-gradient(to right, #ffcc00, #ff0066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .cta-button {
@@ -83,14 +114,14 @@
     display: flex;
    
    margin-bottom:30px;
+   z-index: 1;
   }
   
 .feature:hover{
  
-    transition: 10ms;
-    transform: rotate(3deg);
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,58,0.6418942577030813) 52%, rgba(0,212,255,1) 100%);
+  transform: scale(1.05); /* increase size of element on hover */
+  background: rgb(10,22,60);
+  background: radial-gradient(circle, rgba(10,22,60,1) 55%, rgba(253,45,45,0.958420868347339) 100%);
  
   
      
@@ -102,20 +133,24 @@
   .why-learn-section,
   .why-pentester-section {
     
-    width:400px;
+    width:90%; /* make width responsive to the viewport */
+    height: 70vh; /* make height responsive to the viewport */
+    max-width: 400px; /* limit maximum width */
+    max-height: 400px; /* limit maximum height */
 
-   background-color:transparent;
-   border-radius: 20px;
+    background-color:transparent;
+    border-radius: 20px;
     text-align: center;
     color:white;
     padding: 20px;
     box-shadow:#0aaf62;
     margin:10px  30px;
     box-shadow: 16px -13px 14px -3px rgba(0,0,0,0.5);
--webkit-box-shadow: 16px -13px 14px -3px rgba(0,0,0,0.5);
--moz-box-shadow: 16px -13px 14px -3px rgba(0,0,0,0.5);
-margin-top: 100px;
-transition: background-color 0.3s ease;
+    -webkit-box-shadow: 16px -13px 14px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 16px -13px 14px -3px rgba(0,0,0,0.5);
+    margin-top: 100px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* add transform to transition property */
+
   }
   
   .about-cybersecurity-section h2,
@@ -138,7 +173,7 @@ transition: background-color 0.3s ease;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
-    color:darkgray;
+    color:#ddd;
 
  
   }
@@ -152,32 +187,43 @@ transition: background-color 0.3s ease;
 
   .about-cybersecurity-section:hover{
     
-    transform: rotate(3deg);
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,58,0.6418942577030813) 52%, rgba(0,212,255,1) 100%);
+    transform: scale(1.05); /* increase size of element on hover */
+    background: rgb(10,22,60);
+    background: radial-gradient(circle, rgba(10,22,60,1) 55%, rgba(253,45,45,0.958420868347339) 100%);
   }
 
   .why-learn-section:hover{
     
-    transform: rotate(3deg);
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,58,0.6418942577030813) 52%, rgba(0,212,255,1) 100%);
+    transform: scale(1.05); /* increase size of element on hover */
+    background: rgb(10,22,60);
+    background: radial-gradient(circle, rgba(10,22,60,1) 55%, rgba(253,45,45,0.958420868347339) 100%);
   }
 
   .why-pentester-section:hover{
     
-    transform: rotate(3deg);
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,58,0.6418942577030813) 52%, rgba(0,212,255,1) 100%);
+    transform: scale(1.05); /* increase size of element on hover */
+    background: rgb(10,22,60);
+    background: radial-gradient(circle, rgba(10,22,60,1) 55%, rgba(253,45,45,0.958420868347339) 100%);
   }
   
   .feature {
-    text-align: center;
+    width:100%; /* make width responsive to the viewport */
+    height: 20vh; /* make height responsive to the viewport */
+    max-width: 400px; /* limit maximum width */
+    max-height: 400px; /* limit maximum height */
+
     background-color:transparent;
+    border-radius: 20px;
+    text-align: center;
+    color:white;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 0px 10px;
+    box-shadow:#0aaf62;
+    margin:10px  30px;
+    box-shadow: 16px -13px 14px -3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 16px -13px 14px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 16px -13px 14px -3px rgba(0,0,0,0.5);
+    margin-top: 100px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* add transform to transition property */
   
   }
   

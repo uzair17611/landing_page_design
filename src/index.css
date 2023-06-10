@@ -5,9 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image:url("../../landingpage/public/Images/image.jpg") ;
-  background-size: contain;;
-  background-repeat: none;
+  background-image:url("../../landingpage/public/Images/NewCyber.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 
 code {
